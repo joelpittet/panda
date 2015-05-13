@@ -1,0 +1,7 @@
+# Ignore all the node packages.
+.node_modules
+
+# Ignore all the generated files.
+assets/css/*
+assets/img/*
+assets/js/*

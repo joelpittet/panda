@@ -1,0 +1,9 @@
+@import "../import";
+
+.l-container {
+  @include outer-container;
+}
+
+.l-content {
+  padding: $default-site-spacing*3 0;
+}

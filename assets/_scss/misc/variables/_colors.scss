@@ -1,0 +1,11 @@
+/* The default color palette */
+$c-palette: (
+  alpha: #35404F,
+  beta: #4AAAA5,
+  gamma: #7ACCC8,
+  delta: #A3D39C,
+  epsilon: #E45F56,
+);
+
+/* Shortcut variables */
+$c-region: map-get($c-palette, epsilon);

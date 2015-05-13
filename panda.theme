@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_element_info_alter().
+ *
+ * - Removing the html5shiv library that core adds. I really don't care about
+ * 	 IE. Sorry about that :)
+ */
+function panda_element_info_alter(&$type) {
+  /* This removes html5shiv from core. */
+  unset($type['html']['#attached']);
+}
+
+/**
+ * Implements hook_css_alter().
+ *
+ * - Adds a Google webfont.
+ */
+function panda_css_alter(&$css) {
+  /* Adding a google webfont */
+  $googlefonts = '//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic';
+  $css[$googlefonts] = array(
+    'data' => $googlefonts,
+    'type' => 'external',
+    'every_page' => TRUE,
+    'media' => 'all',
+    'preprocess' => FALSE,
+    'group' => CSS_AGGREGATE_THEME,
+    'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+    'weight' => -1,
+  );
+}

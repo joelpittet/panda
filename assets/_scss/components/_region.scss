@@ -1,0 +1,23 @@
+.l-header {
+
+}
+
+.l-navigation {
+  background-color: map-get($c-palette, alpha);
+
+  .menu {
+    @include nice-menu();
+  }
+}
+
+.l-content {
+  background-color: white;
+}
+
+.l-footer {
+  background-color: map-get($c-palette, epsilon);
+
+  .menu {
+    @include nice-menu();
+  }
+}

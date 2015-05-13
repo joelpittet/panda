@@ -1,0 +1,9 @@
+base:
+  version: VERSION
+  css:
+    base:
+      assets/css/base/base.css: {}
+    components:
+      assets/css/components/components.css: {}
+    layout:
+      assets/css/layout/layout.css: {}

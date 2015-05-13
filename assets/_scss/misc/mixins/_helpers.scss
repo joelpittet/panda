@@ -1,0 +1,9 @@
+@mixin remove-list-spacing() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin remove-list-style() {
+  @include remove-list-spacing();
+  list-style-type: none;
+}

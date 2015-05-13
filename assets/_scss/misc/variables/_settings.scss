@@ -1,0 +1,11 @@
+/**
+ * A boolean defining on whether to use or not use the global border-box sizing
+ * hack.
+ * @type {Boolean}
+ */
+$border-box-sizing: true;
+
+/**
+ * A booling defining on whether to use or not use the font-smoothing hack.
+ */
+ $font-smoothing: true;

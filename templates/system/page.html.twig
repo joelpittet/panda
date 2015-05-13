@@ -1,0 +1,35 @@
+<header class="l-header">
+  <div class="l-container">
+    {% if logo %}
+      <div class="l-logo">
+      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+        <img src="{{ logo }}" alt="{{ 'Home'|t }}" />
+      </a>
+      </div>
+    {% endif %}
+  </div>
+</header>
+
+{% if page.navigation %}
+<div class="l-navigation">
+  <div class="l-container">
+  {{ page.navigation }}
+  </div>
+</div>
+{% endif %}
+
+{% if page.content %}
+<main class="l-content">
+  <div class="l-container">
+  {{ page.content }}
+  </div>
+</main>
+{% endif %}
+
+{% if page.footer %}
+<footer class="l-footer">
+  <div class="l-container">
+  {{ page.footer }}
+  </div>
+</footer>
+{% endif %}

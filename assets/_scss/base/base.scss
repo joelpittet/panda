@@ -1,0 +1,30 @@
+@import "../import";
+
+@if ($border-box-sizing) {
+  *, *::after, *::before {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+}
+
+@if ($font-smoothing) {
+  *, *::after, *::before {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+body {
+   font-family: "Lato", sans-serif;
+   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($c-palette, alpha);
+}

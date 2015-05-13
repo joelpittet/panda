@@ -1,0 +1,17 @@
+{
+  "name": "panda",
+  "version": "0.1.0",
+  "authors": [
+    "SQNDR <me@sqndr.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

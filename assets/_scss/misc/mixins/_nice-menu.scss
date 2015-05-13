@@ -1,0 +1,21 @@
+@mixin nice-menu() {
+  li {
+    display: inline-block;
+    font-weight: 600;
+
+    > a {
+      display: inline-block;
+      padding: $default-site-spacing;
+      transition: background-color .4s;
+
+      &:focus,
+      &:hover {
+        background-color: map-get($c-palette, beta);
+      }
+
+      &.is-active {
+        background: white;
+      }
+    }
+  }
+}

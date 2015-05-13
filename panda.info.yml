@@ -1,0 +1,21 @@
+name: Eight
+type: theme
+base theme: classy
+description: 'A modern admin for Seven.'
+package: Core
+version: 0.1.0
+core: 8.x
+stylesheets-remove:
+  - '@classy/css/layout.css'
+  - '@system/css/system.module.css'
+  - '@system/css/system.theme.css'
+  - '@views/css/views.module.css'
+libraries:
+  - eight/base
+regions:
+  header: Header
+  navigation: Navigation
+  content: Content
+  footer: Footer
+regions_hidden:
+  - header
