@@ -1,9 +1,37 @@
 @import "../import";
 
+/* Container class */
 .l-container {
   @include outer-container;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header region */
+.l-header {
+  .l-logo {
+    position: absolute;
+  }
+
+  .l-sitename {
+    @include breakpoint(tablet) {
+      @include shift(1);
+      @include span-columns(2);
+      margin-top: 5px;
+    }
+  }
+
+  .l-navigation {
+    @include breakpoint(tablet) {
+      @include span-columns(8);
+    }
+  }
 }
 
 .l-content {
   padding: $default-site-spacing*3 0;
+}
+
+.l-footer {
+  padding: $default-site-spacing 0;
 }

@@ -2,10 +2,12 @@
 @import "neat";
 
 /* Import variables */
+@import "misc/variables/breakpoints";
 @import "misc/variables/colors";
 @import "misc/variables/layout";
 @import "misc/variables/settings";
 
 /* Import mixins */
+@import "misc/mixins/breakpoint";
+@import "misc/mixins/fa";
 @import "misc/mixins/helpers";
-@import "misc/mixins/nice-menu";

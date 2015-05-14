@@ -1,0 +1,23 @@
+.menu--main {
+  .menu-item {
+    display: inline-block;
+    font-weight: 600;
+    float: left;
+
+    > a {
+      color: white;
+      display: inline-block;
+      padding: $default-site-spacing;
+      transition: background-color .4s;
+
+      &.is-active {
+        background-color: map-get($c-palette, alpha);
+      }
+
+      &:focus,
+      &:hover {
+        background-color: darken(map-get($c-palette, beta), 10%);
+      }
+    }
+  }
+}

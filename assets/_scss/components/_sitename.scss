@@ -1,0 +1,11 @@
+.sitename {
+  color: white;
+  font-weight: 800;
+  font-size: 2em;
+  transition: opacity .4s;
+  margin-top: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

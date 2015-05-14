@@ -6,6 +6,3 @@ $c-palette: (
   delta: #A3D39C,
   epsilon: #E45F56,
 );
-
-/* Shortcut variables */
-$c-region: map-get($c-palette, epsilon);

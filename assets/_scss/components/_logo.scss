@@ -1,0 +1,10 @@
+.logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}

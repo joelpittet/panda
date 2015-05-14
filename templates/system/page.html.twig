@@ -1,22 +1,26 @@
+{{ attach_library(panda/example) }}
+
 <header class="l-header">
   <div class="l-container">
     {% if logo %}
-      <div class="l-logo">
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
-        <img src="{{ logo }}" alt="{{ 'Home'|t }}" />
-      </a>
-      </div>
+    <div class="l-logo">
+    <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+      <img class="logo" src="{{ logo }}" alt="{{ 'Home'|t }}" width="45" height="45" />
+    </a>
+    </div>
     {% endif %}
+
+    <div class="l-sitename">
+      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" class="sitename">Panda</a>
+    </div>
+
+  {% if page.navigation %}
+  <div class="l-navigation">
+    {{ page.navigation }}
+  </div>
+  {% endif %}
   </div>
 </header>
-
-{% if page.navigation %}
-<div class="l-navigation">
-  <div class="l-container">
-  {{ page.navigation }}
-  </div>
-</div>
-{% endif %}
 
 {% if page.content %}
 <main class="l-content">

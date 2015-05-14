@@ -1,5 +1,5 @@
 base:
-  version: VERSION
+  version: 0.1.0
   css:
     base:
       assets/css/base/base.css: {}
@@ -7,3 +7,14 @@ base:
       assets/css/components/components.css: {}
     layout:
       assets/css/layout/layout.css: {}
+
+example:
+  version: 0.1.0
+  js:
+    assets/js/example.behaviors.js: {}
+
+font-awesome:
+  version: 4.3.0
+  css:
+    components:
+      bower_components/font-awesome/css/font-awesome.min.css: {}
